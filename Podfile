@@ -6,7 +6,7 @@ inhibit_all_warnings!
 project 'UnstoppableWallet/UnstoppableWallet'
 
 def appPods
-  pod 'ZcashLightClientKit', :path => '../test-zcashsdk'
+  pod 'ZcashLightClientKit', :git => 'https://github.com/zcash/ZcashLightClientKit.git', :branch => 'modular-headers'
   pod 'BitcoinKit.swift', '0.15.1'
   pod 'LitecoinKit.swift', '0.15.1'
   pod 'BitcoinCashKit.swift', '0.15.1'

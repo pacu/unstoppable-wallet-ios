@@ -325,7 +325,7 @@ DEPENDENCIES:
   - UIExtensions.swift (from `https://github.com/horizontalsystems/gui-kit/`)
   - UniswapKit.swift (= 0.9.2)
   - XRatesKit.swift (from `https://github.com/horizontalsystems/xrates-kit-ios/`)
-  - ZcashLightClientKit (from `../test-zcashsdk`)
+  - ZcashLightClientKit (from `https://github.com/zcash/ZcashLightClientKit.git`, branch `modular-headers`)
 
 SPEC REPOS:
   trunk:
@@ -426,7 +426,8 @@ EXTERNAL SOURCES:
   XRatesKit.swift:
     :git: https://github.com/horizontalsystems/xrates-kit-ios/
   ZcashLightClientKit:
-    :path: "../test-zcashsdk"
+    :branch: modular-headers
+    :git: https://github.com/zcash/ZcashLightClientKit.git
 
 CHECKOUT OPTIONS:
   ActionSheet.swift:
@@ -483,6 +484,9 @@ CHECKOUT OPTIONS:
   XRatesKit.swift:
     :commit: a422b58ceef88d82010a92047a672022a8bbd738
     :git: https://github.com/horizontalsystems/xrates-kit-ios/
+  ZcashLightClientKit:
+    :commit: 7846d20476ff9688459acd1f9756bd78e1303e43
+    :git: https://github.com/zcash/ZcashLightClientKit.git
 
 SPEC CHECKSUMS:
   ActionSheet.swift: 60b3f9737bf8fff3c7b39de295291a9cd968be58
@@ -563,6 +567,6 @@ SPEC CHECKSUMS:
   XRatesKit.swift: e30efad6badf909b67cad6914ac29e6dbc50079d
   ZcashLightClientKit: cf07efe70d59e33df138f16f260a48eba6aeb613
 
-PODFILE CHECKSUM: ef243a3e73352c355b87e60416774f1074961ff3
+PODFILE CHECKSUM: 78e431cc4634985d8d7d61952be968c731e532d7
 
 COCOAPODS: 1.9.3
