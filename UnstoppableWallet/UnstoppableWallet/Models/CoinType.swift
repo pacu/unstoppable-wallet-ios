@@ -9,6 +9,7 @@ enum CoinType {
     case erc20(address: String, fee: Decimal, minimumRequiredBalance: Decimal, minimumSpendableAmount: Decimal?)
     case eos(token: String, symbol: String)
     case binance(symbol: String)
+    case zcash
 
     init(erc20Address: String, fee: Decimal = 0, minimumRequiredBalance: Decimal = 0, minimumSpendableAmount: Decimal? = nil) {
         self = .erc20(address: erc20Address, fee: fee, minimumRequiredBalance: minimumRequiredBalance, minimumSpendableAmount: minimumSpendableAmount)
@@ -16,6 +17,9 @@ enum CoinType {
 
     func canSupport(accountType: AccountType) -> Bool {
         switch self {
+        case .zcash:
+            if case let .mnemonic(words, salt) = accountType, words.count == 24, salt == nil { return true }
+            return false
         case .bitcoin, .litecoin, .bitcoinCash, .dash, .ethereum, .erc20:
             if case let .mnemonic(words, salt) = accountType, words.count == 12, salt == nil { return true }
             return false
@@ -30,7 +34,7 @@ enum CoinType {
 
     var predefinedAccountType: PredefinedAccountType {
         switch self {
-        case .bitcoin, .litecoin, .bitcoinCash, .dash, .ethereum, .erc20:
+        case .zcash, .bitcoin, .litecoin, .bitcoinCash, .dash, .ethereum, .erc20:
             return .standard
         case .eos:
             return .eos
@@ -100,6 +104,8 @@ extension CoinType: Hashable {
 
     public func hash(into hasher: inout Hasher) {
         switch self {
+        case .zcash:
+            hasher.combine("zcash")
         case .bitcoin:
             hasher.combine("bitcoin")
         case .litecoin:

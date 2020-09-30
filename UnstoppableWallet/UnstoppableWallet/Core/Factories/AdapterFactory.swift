@@ -26,6 +26,8 @@ class AdapterFactory: IAdapterFactory {
         }
 
         switch wallet.coin.type {
+        case .zcash:
+            return try? ZcashAdapter(wallet: wallet, syncMode: syncMode, derivation: derivation, testMode: appConfigProvider.testMode)
         case .bitcoin:
             return try? BitcoinAdapter(wallet: wallet, syncMode: syncMode, derivation: derivation, testMode: appConfigProvider.testMode)
         case .litecoin:

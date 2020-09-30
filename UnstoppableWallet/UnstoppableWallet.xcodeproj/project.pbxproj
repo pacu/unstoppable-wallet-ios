@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D64BFE925252C3A008EBFD0 /* ZcashAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D64BFE825252C3A008EBFD0 /* ZcashAdapter.swift */; };
+		0D64BFEA25252C3A008EBFD0 /* ZcashAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D64BFE825252C3A008EBFD0 /* ZcashAdapter.swift */; };
+		0D64BFEB25252C3A008EBFD0 /* ZcashAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D64BFE825252C3A008EBFD0 /* ZcashAdapter.swift */; };
+		0D64BFF225253CAD008EBFD0 /* sapling-output.params in Resources */ = {isa = PBXBuildFile; fileRef = 0D64BFF025253CAC008EBFD0 /* sapling-output.params */; };
+		0D64BFF325253CAD008EBFD0 /* sapling-output.params in Resources */ = {isa = PBXBuildFile; fileRef = 0D64BFF025253CAC008EBFD0 /* sapling-output.params */; };
+		0D64BFF425253CAD008EBFD0 /* sapling-output.params in Resources */ = {isa = PBXBuildFile; fileRef = 0D64BFF025253CAC008EBFD0 /* sapling-output.params */; };
+		0D64BFF525253CAD008EBFD0 /* sapling-spend.params in Resources */ = {isa = PBXBuildFile; fileRef = 0D64BFF125253CAD008EBFD0 /* sapling-spend.params */; };
+		0D64BFF625253CAD008EBFD0 /* sapling-spend.params in Resources */ = {isa = PBXBuildFile; fileRef = 0D64BFF125253CAD008EBFD0 /* sapling-spend.params */; };
+		0D64BFF725253CAD008EBFD0 /* sapling-spend.params in Resources */ = {isa = PBXBuildFile; fileRef = 0D64BFF125253CAD008EBFD0 /* sapling-spend.params */; };
 		11B3500809F1B5BB5AF8AF64 /* GuidesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B35A2C34C3D62CCA5BFFB5 /* GuidesRepository.swift */; };
 		11B350081FA306427997CEA7 /* SendFeePriorityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B35EA828E6984CEC2DB063 /* SendFeePriorityInteractor.swift */; };
 		11B3500D9329373ECD0D7C1E /* ContactModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B35346CC367A9C4EE59C7E /* ContactModule.swift */; };
@@ -2060,6 +2069,9 @@
 
 /* Begin PBXFileReference section */
 		0B6F4260BBC5A8BD53346F70 /* Pods-Unstoppable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unstoppable.debug.xcconfig"; path = "Target Support Files/Pods-Unstoppable/Pods-Unstoppable.debug.xcconfig"; sourceTree = "<group>"; };
+		0D64BFE825252C3A008EBFD0 /* ZcashAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcashAdapter.swift; sourceTree = "<group>"; };
+		0D64BFF025253CAC008EBFD0 /* sapling-output.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sapling-output.params"; sourceTree = "<group>"; };
+		0D64BFF125253CAD008EBFD0 /* sapling-spend.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sapling-spend.params"; sourceTree = "<group>"; };
 		11B3500621E6BB91F9CE181B /* PrivacySyncModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacySyncModeViewController.swift; sourceTree = "<group>"; };
 		11B350097B17D90CD768125E /* SendBitcoinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendBitcoinInteractor.swift; sourceTree = "<group>"; };
 		11B35011FD1CFBCA39E8013A /* CoinStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinStorage.swift; sourceTree = "<group>"; };
@@ -3764,6 +3776,7 @@
 				11B35232DF5270C6F48DDB7B /* EosAdapter.swift */,
 				11B35AAAC675987369F2DA1B /* BinanceAdapter.swift */,
 				11B356861F703A5A5C6630B6 /* LitecoinAdapter.swift */,
+				0D64BFE825252C3A008EBFD0 /* ZcashAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -4659,6 +4672,8 @@
 		D3285F4420BD158E00644076 /* UnstoppableWallet */ = {
 			isa = PBXGroup;
 			children = (
+				0D64BFF025253CAC008EBFD0 /* sapling-output.params */,
+				0D64BFF125253CAD008EBFD0 /* sapling-spend.params */,
 				5026FFF321C3CA280023EEA2 /* Configuration */,
 				11B3546BA60E06900F58BA94 /* Core */,
 				11B356605394189E9B5EBEE0 /* Models */,
@@ -4857,9 +4872,11 @@
 				D3373DB220C52F640082BC4A /* LaunchScreen.xib in Resources */,
 				50AB06B7215A269200A01E4A /* InfoPlist.strings in Resources */,
 				D38406C021832751007D50AD /* Assets.xcassets in Resources */,
+				0D64BFF725253CAD008EBFD0 /* sapling-spend.params in Resources */,
 				D38406C721832862007D50AD /* AppIconDevT.xcassets in Resources */,
 				D3B62A9E20CA88BF005A9F80 /* Colors.xcassets in Resources */,
 				D3B62A9A20CA73A0005A9F80 /* Localizable.strings in Resources */,
+				0D64BFF425253CAD008EBFD0 /* sapling-output.params in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4877,9 +4894,11 @@
 				D38405BC218317DF007D50AD /* LaunchScreen.xib in Resources */,
 				D38405BD218317DF007D50AD /* InfoPlist.strings in Resources */,
 				D38406C221832757007D50AD /* Assets.xcassets in Resources */,
+				0D64BFF625253CAD008EBFD0 /* sapling-spend.params in Resources */,
 				D38405C0218317DF007D50AD /* Colors.xcassets in Resources */,
 				D38405C3218317DF007D50AD /* Localizable.strings in Resources */,
 				D38406C921832968007D50AD /* AppIconDev.xcassets in Resources */,
+				0D64BFF325253CAD008EBFD0 /* sapling-output.params in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4890,9 +4909,11 @@
 				D38406AC21831B3D007D50AD /* LaunchScreen.xib in Resources */,
 				D38406AD21831B3D007D50AD /* InfoPlist.strings in Resources */,
 				D38406B021831B3D007D50AD /* Colors.xcassets in Resources */,
+				0D64BFF525253CAD008EBFD0 /* sapling-spend.params in Resources */,
 				D38406C5218327E3007D50AD /* AppIcon.xcassets in Resources */,
 				D38406B321831B3D007D50AD /* Localizable.strings in Resources */,
 				D38406B521831B3D007D50AD /* Assets.xcassets in Resources */,
+				0D64BFF225253CAD008EBFD0 /* sapling-output.params in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5266,6 +5287,7 @@
 				58AAAAAE312B4839ECDB4C87 /* RequestErrorView.swift in Sources */,
 				58AAA6084D64BB5064E542D0 /* HorSysProvider.swift in Sources */,
 				58AAADA919A827B84C9623D1 /* BlockChairProvider.swift in Sources */,
+				0D64BFEB25252C3A008EBFD0 /* ZcashAdapter.swift in Sources */,
 				58AAA42E94F5567EF3F4690C /* BlockExplorerProvider.swift in Sources */,
 				58AAA3E5C080A32A6A6B0E6D /* BtcComProvider.swift in Sources */,
 				58AAA1A770E5DD3B87EDD1A7 /* EtherscanProvider.swift in Sources */,
@@ -5971,6 +5993,7 @@
 				58AAA368D11A7036BBE300B4 /* HorSysProvider.swift in Sources */,
 				58AAA515AE88531BB9DE09A9 /* BlockChairProvider.swift in Sources */,
 				58AAA8E53533434E5F4D2992 /* BlockExplorerProvider.swift in Sources */,
+				0D64BFEA25252C3A008EBFD0 /* ZcashAdapter.swift in Sources */,
 				58AAA688351BEAF1B154C0F8 /* BtcComProvider.swift in Sources */,
 				58AAA7253F95C8ADECB77A7F /* EtherscanProvider.swift in Sources */,
 				58AAA44E41D159AF6395CB7F /* FullTransactionDataProviderManager.swift in Sources */,
@@ -6638,6 +6661,7 @@
 				58AAA8124398E5905A425453 /* BlockChairProvider.swift in Sources */,
 				58AAA96EE54FCE113749FE93 /* BlockExplorerProvider.swift in Sources */,
 				58AAAA91EA503CFDDE7CB43F /* BtcComProvider.swift in Sources */,
+				0D64BFE925252C3A008EBFD0 /* ZcashAdapter.swift in Sources */,
 				58AAA2D79BC59DC8458F5BB8 /* EtherscanProvider.swift in Sources */,
 				58AAA9B0D99E48C2BC2FB9E6 /* FullTransactionDataProviderManager.swift in Sources */,
 				58AAAD7C8325DDF71D79E4CC /* DataProviderSettingsModule.swift in Sources */,
