@@ -292,7 +292,7 @@ PODS:
     - ObjectMapper (~> 3.5.2)
     - RxSwift (~> 5.0)
     - RxSwiftExt (~> 5)
-  - ZcashLightClientKit (0.11.0-alpha.1):
+  - ZcashLightClientKit (0.11.1):
     - gRPC-Swift (= 1.0.0)
     - SQLite.swift (~> 0.12.2)
 
@@ -343,7 +343,7 @@ DEPENDENCIES:
   - UnstoppableDomainsResolution
   - WalletConnect (from `https://github.com/horizontalsystems/wallet-connect-swift`, branch `master`)
   - XRatesKit.swift (from `https://github.com/horizontalsystems/xrates-kit-ios/`)
-  - ZcashLightClientKit (from `https://github.com/zcash/ZcashLightClientKit.git`, branch `shield-funds-poc`)
+  - ZcashLightClientKit (~> 0.11.1)
 
 SPEC REPOS:
   trunk:
@@ -399,6 +399,7 @@ SPEC REPOS:
     - SwiftyJSON
     - UnstoppableDomainsResolution
     - X11Kit.swift
+    - ZcashLightClientKit
 
 EXTERNAL SOURCES:
   ActionSheet.swift:
@@ -460,9 +461,6 @@ EXTERNAL SOURCES:
     :git: https://github.com/horizontalsystems/wallet-connect-swift
   XRatesKit.swift:
     :git: https://github.com/horizontalsystems/xrates-kit-ios/
-  ZcashLightClientKit:
-    :branch: shield-funds-poc
-    :git: https://github.com/zcash/ZcashLightClientKit.git
 
 CHECKOUT OPTIONS:
   ActionSheet.swift:
@@ -580,9 +578,6 @@ CHECKOUT OPTIONS:
   XRatesKit.swift:
     :commit: 9cf226f45a23d8de22ea177567db37ebbafcb0dc
     :git: https://github.com/horizontalsystems/xrates-kit-ios/
-  ZcashLightClientKit:
-    :commit: 0214131bde51325b28aba725ee74df74e9d27022
-    :git: https://github.com/zcash/ZcashLightClientKit.git
 
 SPEC CHECKSUMS:
   ActionSheet.swift: 60b3f9737bf8fff3c7b39de295291a9cd968be58
@@ -672,8 +667,8 @@ SPEC CHECKSUMS:
   WalletConnect: 7253f3c123df3bba10d71459f0d62a900fee68ac
   X11Kit.swift: 6cfd05473e41c7b866c1a016300da02af63ad049
   XRatesKit.swift: ef86b46a40770ae25e5db799b87b6858ef972db3
-  ZcashLightClientKit: 1a0943fc5e226818e6b9177d4b13a5ce321d4367
+  ZcashLightClientKit: 2467b6322cccbc247b43cc78c8b917479206c20b
 
-PODFILE CHECKSUM: 3e57b3e23cb62098b8f0368249b34ca864ef9563
+PODFILE CHECKSUM: a9dc76cde0033cf8c1991b81b259bb7f95d44fd0
 
 COCOAPODS: 1.10.1
